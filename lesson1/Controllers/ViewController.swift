@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         
         configureSegueButton()
+        
+        print("changes in branch main")
     }
     
     private func configureSegueButton() {
