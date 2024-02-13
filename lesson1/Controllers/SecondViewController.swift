@@ -19,17 +19,29 @@ class SecondViewController: UIViewController {
         return button
     }()
     
-    private let data: String
+    private let emailLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .black
+        label.font = .boldSystemFont(ofSize: 18)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    /// first
+//    private let email: String
+//
+//    init(email: String) {
+//
+//        self.email = email
+//
+//        super.init(nibName: nil, bundle: nil)
+//    }
+//
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
     
-    init(data: String) {
-        self.data = data
-        
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    /// second
+    var email: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +51,14 @@ class SecondViewController: UIViewController {
         view.addSubview(segueButton)
         
         segueButton.addTarget(self, action: #selector(showNextVC), for: .touchUpInside)
+        
+        view.addSubview(emailLabel)
+        NSLayoutConstraint.activate([
+            emailLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            emailLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        
+        emailLabel.text = email
     }
     
     @objc func showNextVC(_ sender: UIButton) {

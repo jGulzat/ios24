@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4014589C2B7BB32E0071C437 /* MakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4014589B2B7BB32E0071C437 /* MakerView.swift */; };
 		4093D6D82B766CD80068918A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4093D6D72B766CD80068918A /* AppDelegate.swift */; };
 		4093D6DA2B766CD80068918A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4093D6D92B766CD80068918A /* SceneDelegate.swift */; };
 		4093D6DC2B766CD80068918A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4093D6DB2B766CD80068918A /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4014589B2B7BB32E0071C437 /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
 		4093D6D42B766CD80068918A /* lesson1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4093D6D72B766CD80068918A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4093D6D92B766CD80068918A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4014589A2B7BB3170071C437 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4014589B2B7BB32E0071C437 /* MakerView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		4093D6CB2B766CD80068918A = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		4093D6D62B766CD80068918A /* lesson1 */ = {
 			isa = PBXGroup;
 			children = (
+				4014589A2B7BB3170071C437 /* Helpers */,
 				4093D6ED2B7676C60068918A /* Controllers */,
 				4093D6EC2B7676780068918A /* Resourse */,
 				4093D6EB2B7676490068918A /* AppDelegate */,
@@ -165,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4093D6EF2B7676F20068918A /* SecondViewController.swift in Sources */,
+				4014589C2B7BB32E0071C437 /* MakerView.swift in Sources */,
 				4093D6DC2B766CD80068918A /* ViewController.swift in Sources */,
 				4093D6F12B7678AA0068918A /* ThirdViewController.swift in Sources */,
 				4093D6D82B766CD80068918A /* AppDelegate.swift in Sources */,
