@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         print("showNextVC")
         
         let vc = SecondViewController(data: "data")
-        
+        print("SecondViewController lesson1")
         navigationController?.pushViewController(vc, animated: true)
     }
 }
